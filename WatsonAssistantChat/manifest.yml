@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: WatsonAssistantChatFbenavides
+  buildpack: liberty-for-java
+  path: ./target/WatsonAssistantChat-0.0.1.war
+  memory: 512M
+  domain: mybluemix.net
+  host: WatsonAssistantChatFbenavides
+  services:
+  - Db2-x5
